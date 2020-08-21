@@ -1,0 +1,46 @@
+{
+  "name": "react-electron",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "bootstrap": "^4.3.1",
+    "browserify-fs": "^1.0.0",
+    "classnames": "^2.2.6",
+    "jquery": "^3.4.1",
+    "material-ui-search-bar": "^1.0.0-beta.13",
+    "nedb": "^1.8.0",
+    "promise": "^8.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "1.0.17",
+    "reactstrap": "^8.0.1"
+  },
+  "devDependencies": {
+    "electron": "^1.7.10",
+    "electron-builder": "^19.52.1",
+    "foreman": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "nf start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "ebuild": "yarn build && node_modules/.bin/build"
+  },
+  "description": "React and Electron Awesome App",
+  "homepage": "./",
+  "main": "electron/main.js",
+  "build": {
+    "productName": "React Electron App",
+    "electronVersion": "1.7.10",
+    "files": [
+      "build/**/*",
+      "electron/*"
+    ]
+  }
+}
